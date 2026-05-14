@@ -4,7 +4,7 @@
 [![npm @cclarity-packages/cli](https://img.shields.io/npm/v/%40cclarity-packages%2Fcli?label=%40cclarity-packages%2Fcli&color=blue)](https://www.npmjs.com/package/@cclarity-packages/cli)
 [![npm @cclarity-packages/mcp](https://img.shields.io/npm/v/%40cclarity-packages%2Fmcp?label=%40cclarity-packages%2Fmcp&color=blue)](https://www.npmjs.com/package/@cclarity-packages/mcp)
 
-Connect your AI (Claude, Cursor, or any MCP client) to your LinkedIn data via **CClarity**.
+Connect your AI (Claude, ChatGPT, Cursor, or any MCP client) to your LinkedIn data via **CClarity**.
 
 - **Remote MCP API:** `https://api.cclarity.io/mcp` (Streamable HTTP, OAuth-gated)
 - **Docs:** [docs.cclarity.io/mcp](https://docs.cclarity.io/mcp)
