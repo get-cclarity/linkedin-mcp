@@ -1,0 +1,57 @@
+{
+    "name": "@cclarity-packages/mcp",
+    "version": "0.1.4",
+    "description": "CClarity MCP stdio server — browser login and remote tool proxy (use @cclarity-packages/cli for init)",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "bin": {
+        "cclarity-mcp": "dist/bin.js"
+    },
+    "exports": {
+        ".": "./dist/index.js"
+    },
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "clean": "rimraf dist",
+        "prepublishOnly": "npm run clean && npm run build",
+        "test": "jest --no-coverage --runInBand"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.26.0",
+        "open": "^10.1.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.14",
+        "@types/node": "^20.0.0",
+        "jest": "^29.7.0",
+        "rimraf": "^6.0.1",
+        "ts-jest": "^29.2.5",
+        "typescript": "^5.4.0"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node",
+        "transform": {
+            "^.+\\.ts$": [
+                "ts-jest",
+                {
+                    "isolatedModules": true
+                }
+            ]
+        },
+        "testMatch": [
+            "**/__tests__/**/*.test.ts"
+        ]
+    }
+}
