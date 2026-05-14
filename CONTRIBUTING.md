@@ -1,5 +1,15 @@
 # Contributing
 
+## Git push (SSH)
+
+Use a GitHub account with **write** access to `get-cclarity/linkedin-mcp`. If `git push` fails with “permission denied”, load the org key (example):
+
+```bash
+ssh-add ~/.ssh/GitHub/id_ed25519
+git remote set-url origin git@github.com:get-cclarity/linkedin-mcp.git
+git push origin main
+```
+
 ## Repository structure
 
 ```
